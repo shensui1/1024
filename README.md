@@ -13,19 +13,19 @@
 2、不支持合约批量铸造  
 3、将不再记录mint hash  
 ### 规范
-1、**Deploy**：用于部署NextInscription协议代币  
-2、**Mint**：用于铸造NextInscription协议代币  
-3、**transfer**：用于转移NextInscription协议代币  
-4、**deposit**：用于NextInscription质押触发的event  
-4、**contractTransfer**：用于NextInscription协议合约内部代币转出触发的event   
-5、**proxyDeposit**：用于NextInscription协议合约内部余额转质押触发的event    
+1、**Deploy**：用于部署Inscription协议代币  
+2、**Mint**：用于铸造Inscription协议代币  
+3、**transfer**：用于转移Inscription协议代币  
+4、**deposit**：用于Inscription质押触发的event  
+4、**contractTransfer**：用于Inscription协议合约内部代币转出触发的event   
+5、**proxyDeposit**：用于Inscription协议合约内部余额转质押触发的event    
 ### Deploy
 ```cpp
-data:,{"a":"NextInscription","p":"oprc-20","op":"deploy","tick":"NI","max":"210000000000","lim":"10000"}
+data:,{"a":"Inscription","p":"prc-20","op":"deploy","tick":"1024","max":"210000","lim":"100"}
 ```
 | Key | Required? | Desc |
 | :-----| :----  | ----: |
-| a | yes | NextInscription |
+| a | yes | Inscription |
 | p | yes | 代币协议          |
 | op | yes | 操作类型deploy   |
 | tick | yes | 代币名称       |
@@ -34,11 +34,11 @@ data:,{"a":"NextInscription","p":"oprc-20","op":"deploy","tick":"NI","max":"2100
 
 ### Mint
 ```cpp
-data:,{"a":"NextInscription","p":"oprc-20","op":"mint","tick":"NI","amt":"10000"}
+data:,{"a":"Inscription","p":"prc-20","op":"mint","tick":"1024","amt":"100"}
 ```
 | Key | Required? | Desc |
 | :-----| :----  | ----: |
-| a | yes | NextInscription |
+| a | yes | Inscription |
 | p | yes | 代币协议          |
 | op | yes | 操作类型mint  |
 | tick | yes | 代币名称      |
@@ -46,11 +46,11 @@ data:,{"a":"NextInscription","p":"oprc-20","op":"mint","tick":"NI","amt":"10000"
 
 ### transfer
 ```cpp
-data:,{"a":"NextInscription","p":"oprc-20","op":"transfer","tick":"NI","amt":"10000"}
+data:,{"a":"NextInscription","p":"prc-20","op":"transfer","tick":"1024","amt":"100"}
 ```
 | Key | Required? | Desc |
 | :-----| :----  | ----: |
-| a | yes | NextInscription |
+| a | yes | Inscription |
 | p | yes | 代币协议          |
 | op | yes | 操作类型transfer  |
 | tick | yes | 代币名称      |
