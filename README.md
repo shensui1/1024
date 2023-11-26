@@ -17,8 +17,8 @@
 2、**Mint**：用于铸造Inscription协议代币  
 3、**transfer**：用于转移Inscription协议代币  
 4、**deposit**：用于Inscription质押触发的event  
-4、**contractTransfer**：用于Inscription协议合约内部代币转出触发的event   
-5、**proxyDeposit**：用于Inscription协议合约内部余额转质押触发的event    
+5、**contractTransfer**：用于Inscription协议合约内部代币转出触发的event   
+6、**proxyDeposit**：用于Inscription协议合约内部余额转质押触发的event    
 ### Deploy
 ```cpp
 data:,{"a":"Inscription","p":"prc-20","op":"deploy","tick":"1024","max":"210000","lim":"100"}
